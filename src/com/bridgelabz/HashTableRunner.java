@@ -5,9 +5,10 @@ public class HashTableRunner {
 
     public static void main(String[] args) {
 
-        String sentence = "To be or not to be";
+        String paragraph = "Paranoids are not paranoid because they are paranoid but " +
+                "because they keep putting themselves deliberately into paranoid avoidable situations";
 
-        String[] words = sentence.toLowerCase().split(" ");
+        String[] words = paragraph.toLowerCase().split(" ");
 
         MyhashMap<String, Integer> myhashMap = new MyhashMap<>();
 
@@ -17,10 +18,8 @@ public class HashTableRunner {
             else value = value + 1;
             myhashMap.add(word, value);
         }
-
-        int frequency = (int) myhashMap.get("to");
-
         System.out.println(myhashMap);
+        int frequency = (int) myhashMap.get("paranoid");
         System.out.println(frequency);
 
 
