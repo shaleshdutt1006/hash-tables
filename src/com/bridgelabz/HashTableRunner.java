@@ -18,9 +18,9 @@ public class HashTableRunner {
             else value = value + 1;
             myhashMap.add(word, value);
         }
+        myhashMap.remove("avoidable");
         System.out.println(myhashMap);
-        int frequency = (int) myhashMap.get("paranoid");
-        System.out.println(frequency);
+
 
 
     }
